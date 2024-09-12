@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mine Project</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: rgb(12, 12, 32);
+        color: white;
+      }
+      .navber {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px,
+          rgba(167, 166, 166, 0.12) 0px 4px 6px,
+          rgba(180, 180, 180, 0.17) 0px 12px 13px,
+          rgba(150, 149, 149, 0.09) 0px -3px 5px;
+      }
+      span {
+        color: rgb(2, 186, 255);
+      }
+      .nav-link {
+        display: flex;
+        flex-direction: row;
+      }
+      .nav-link li,
+      a {
+        padding: 10px;
+        color: aliceblue;
+        list-style: none;
+        text-decoration: none;
+      }
+      .btn1 {
+        margin-right: 50px;
+        background: transparent;
+        border: 2px solid skyblue;
+        border-radius: 5px;
+        padding: 3px 20px;
+        color: white;
+        cursor: pointer;
+      }
+      .btn2 {
+        margin-right: 50px;
+        background: rgb(2, 182, 253);
+        border: 2px solid skyblue;
+        border-radius: 5px;
+        padding: 5px 20px;
+        color: white;
+        cursor: pointer;
+      }
+      .btn1:hover {
+        background: rgb(2, 182, 253);
+        transition: 1s;
+      }
+      .btn2:hover {
+        background: transparent;
+        transition: 1s;
+      }
+      a:hover {
+        color: rgb(2, 182, 253);
+        border-bottom: 2px solid rgb(2, 186, 255);
+        transition: 1s;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80% auto;
+        margin-top: 15px;
+      }
+      .h4 {
+        color: rgb(2, 182, 253);
+        text-align: center;
+        margin: 15px;
+      }
+      .h1 {
+        text-align: center;
+        margin: 10px;
+      }
+      .pera {
+        text-align: center;
+        margin: 10px;
+      }
+      .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .card {
+        background-color: lightgrey;
+        margin: 10px;
+        width: 200px;
+        height: 220px;
+        margin-top: 20px;
+        padding: 10px;
+        color: rgb(22, 22, 22);
+      }
+      .card:hover {
+        background-color: rgb(2, 182, 253);
+        color: black;
+        cursor: pointer;
+        transition: 700ms;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        padding: 5px 10px;
+        box-shadow: rgba(230, 230, 231, 0.25) 0px 30px 60px -12px inset,
+          rgba(180, 180, 180, 0.3) 0px 18px 36px -18px inset;
+      }
+      @media screen and (max-width: 450px) {
+        .nav-link {
+          display: none;
+        }
+        .cards {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+      }
+      @media screen and (max-width: 880px) {
+        .btn1 {
+          
+          margin-top: 8px;
+        }
+        .nav-link{
+          font-size: 10px;
+        }
+        .btn2 {
+          margin-top: 8px;
+        }
+        .btn{
+          display: flex;
+          font-size: 8px;
+        }
+        .navber h1{
+          font-size: 16px;
+        }
+        .card {
+          margin: 10px;
+          width: 80%;
+          height: 250px;
+          margin-top: 20px;
+          padding: 5px;
+        }
+      }
+    </style>
+    <div class="navber">
+      <h1>
+        Brand
+        <span> Name </span>
+      </h1>
+      <ul class="nav-link">
+        <li class="nav"><a href="">Home</a></li>
+        <li class="nav"><a href="">Product</a></li>
+        <li class="nav"><a href="">Pricing</a></li>
+        <li class="nav"><a href="">Contact</a></li>
+      </ul>
+      <div class="btn">
+        <button class="btn1">Login</button>
+        <button class="btn2">
+          Join <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <header class="container">
+      <div class="h4">
+        <h4>Welcome</h4>
+      </div>
+      <div class="h1">
+        <h1>Selling on the<br />internate like a pro</h1>
+      </div>
+      <div class="pera">
+        <p>
+          We know how large objects will act,but things on a <br />
+          small scale just do not act that way.
+        </p>
+      </div>
+      <div class="head-btn">
+        <button class="btn2">Get Quote Now</button>
+        <button class="btn1">
+          Learn More <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+    <main class="cards-section">
+      <section class="cards">
+        <div class="card">
+          <samp>
+            <i class="fa-regular fa-face-smile"></i>
+          </samp>
+          <h3>Training Courses</h3>
+          <div class="underline">_____</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia, aut atque officia dicta alias!
+          </p>
+        </div>
+        <div class="card">
+          <samp>
+            <i class="fa-solid fa-book-open-reader"></i>
+          </samp>
+          <h3>2,769 courses</h3>
+          <div class="underline">_____</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia, aut atque officia dicta alias!
+          </p>
+        </div>
+        <div class="card">
+          <samp>
+            <i class="fa-solid fa-graduation-cap"></i>
+          </samp>
+          <h3>Training Courses</h3>
+          <div class="underline">_____</div>
+
+          </small>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+            mollitia, aut atque officia dicta alias!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <div>
+        <h3>Kavi's Web Service</h3>
+        <p>&copy; 2024 All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
